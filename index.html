@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bird Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/script.js"></script>
+
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">새 추적 60분</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/Jin1025">Yejin Kim</a><sup>1*</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/rillbrill">Sumin Cho</a><sup>2*</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/dnflslwlq">Wooryeon Lee</a><sup>3*</sup>, and </span>
+              <span class="author-block">
+                <a href="https://github.com/gnueaj">Jaeung Lee</a><sup>4&dagger;*</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Konkuk University</span>&emsp;
+              <span class="author-block"><sup>2</sup>Hongik University</span>&emsp;
+              <span class="author-block"><sup>3</sup>Hanyang University</span>&emsp;
+              <span class="author-block"><sup>4</sup>Sungkyunkwan University</span><br>
+              <span class="author-block"><sup>&dagger;</sup>Project Lead</span>&emsp;
+              <span class="author-block"><sup>*</sup><a href="https://deepdaiv.oopy.io/">deep daiv.</a></span><br>
+            </div>
+            <div class="column has-text-centered">
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/benhenryL/Deblurring-3D-Gaussian-Splatting"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class=" carousel results-carousel">
+        <!-- <div class="item item-cake">
+          <video poster="" id="cake" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/cake.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-caps">
+          <video poster="" id="caps" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/caps.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-cisco">
+          <video poster="" id="cisco" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/cisco.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-cups">
+          <video poster="" id="cups" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/cups.mp4" type="video/mp4">
+          </video>
+        </div> -->
+        <!-- <div class="item item-daisy">
+          <video poster="" id="daisy" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/daisy.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-seal">
+          <video poster="" id="seal" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/seal.mp4" type="video/mp4">
+          </video>
+        </div> -->
+        <!-- <div class="item item-coral">
+          <video poster="" id="coral" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coral.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-cupcake">
+          <video poster="" id="cupcake" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/cupcake.mp4"
+                    type="video/mp4">
+          </video>
+        </div> -->
+        <!-- <div class="item item-sausage">
+          <video poster="" id="sausage" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sausage.mp4"
+                    type="video/mp4">
+          </video>
+        </div> -->
+        <!-- <div class="item item-tools">
+          <video poster="" id="tools" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/tools.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-ball">
+          <video poster="" id="ball" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ball.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-basket">
+          <video poster="" id="basket" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/basket.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-stair">
+          <video poster="" id="stair" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/stair.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-heron">
+          <video poster="" id="heron" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/heron.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-parterre">
+          <video poster="" id="parterre" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/parterre.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-buick">
+          <video poster="" id="buick" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/buick.mp4" type="video/mp4">
+          </video>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div align="center">
+            <img src="static/images/FPS_curve.jpg" style="width:100%">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              Novel-view synthesis of scenes acquired with several images or videos has been revolutionized by Radiance Field techniques. However, their high visual quality was achieved only with neural networks, which are costly to train and do not provide real-time rendering. Recently, 3D Gaussians splatting-based approach has been proposed to model the 3D scene, and it achieves state-of-the-art visual quality as well as renders in real-time. However, this approach suffers from severe degradation in the rendering quality if the training images are blurry. Several previous studies have attempted to render clean and sharp images from blurry input images using neural fields. However, the majority of those works are designed only for volumetric rendering-based neural fields and are not applicable to rasterization-based approaches. To fill this gap, we propose a novel neural field-based deblurring framework for the recently proposed rasterization-based approaches, 3D Gaussians, and rasterization. Specifically, we employ a small Multi-Layer Perceptron (MLP), which manipulates the covariance of each 3D Gaussian to model the scene blurriness. While deblurring 3D Gaussian Splatting can still enjoy real-time rendering, it can reconstruct fine and sharp details from blurry images. A variety of experiments have been conducted on the benchmark, and the results have revealed the effectiveness of our approach for deblurring.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+    </div>
+  </section>
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Deblurring 3D Gaussians</h2>
+          <div class="content has-text-justified">
+            <div style="margin-top: 20px">
+              <img src="./static/images/workflow.png">
+            </div>
+            <p align="justify">We learn the deblurring by transforming the geometry of the 3D Gaussians. To do so, we have employed an MLP that takes
+              the position, rotation, scale, and viewing direction of 3D Gaussians as inputs, and outputs offsets for rotation and scale.
+              Then these offsets are element-wisely multiplied to rotation and scale, respectively, to obtain the transformed geometry of the 3D Gaussians.</p>
+            </div>
+            <img src="./static/images/deltas3_page.jpg">
+            <p align="justify">Since we predict the offsets for each Gaussian, we can selectively enlarge the covariances of Gaussians where the parts in the training images are blurred. This flexibility enables us to
+              effectively implement deblurring capability in 3D-GS. On the other hand, a naive approach to blurring the rendered image is simply to apply a Gaussian kernel which is not capable of handling each part of the image differently but blurs
+              the entire image.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Compensation for Sparse Point Cloud</h2>
+          <div style="display: inline-block; width:33%; ">
+						<div class="img_tag" style="padding-right:20px"><h3>Input Image</h3></div>
+					</div>
+					<div style="display: inline-block; width:33%">
+						<div class="img_tag"><h3>w/o Compensation</h3></div>
+					</div>
+					<div style="display: inline-block; width:33%">
+						<div class="img_tag"><h3>w/ Compensation (Ours)</h3></div>
+					</div>
+					<img src="./static/images/compensation.jpg" style="width:100%">
+
+          <div style="margin-top: 40px">
+						<div style="display: inline-block; width:33%; ">
+							<div class="img_tag"><h3 style="text-align:right">w/o Compensation</h3></div>
+						</div>
+						<div style="display: inline-block; width:30%; ">
+							<div class="img_tag"><h3 style="text-align:left"> </h3></div>
+						</div>
+						<div style="display: inline-block; width:36%;">
+							<div class="img_tag"><h3 style="text-align:left">w/ Compensation (Ours)</h3></div>
+						</div>
+					</div>
+					<img src="./static/images/compensation_depth.jpg" style="width:100%">
+
+          <p align="justify">3D-GS's reconstruction quality heavily relies on the initial point cloud which is obtained from structure-from-motion (SfM). 
+						However, SfM produces only sparse point clouds if the given images are blurry. Even worse, if the scene has a large depth of field 
+						which is prevalent in defocus blurry scenes, SfM hardly extracts any points that lie on the far end of the scene.
+						To make a dense point cloud, we add additional points on the periphery of the existing points using K-Nearest-Neighbor (KNN) algorithm during the training.
+						Furthermore, we prune 3D Gaussians depending on their relative depth. We loosely prune the 3D Gaussians placed on the far edge of the scene to keep 
+						more 3D Gaussians on the far plane.
+					</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Visualization of Defocus and Camera Motion blur</h2>
+          <div style="display: inline-block; width:100%; ">
+						<div class="img_tag" style="padding-right:20px"><h3>Gaussians visualization for defocus blur</h3></div>
+					</div>
+					<img src="./static/images/gaussian_visualization.jpg" style="width:100%">
+
+          <p align="justify">This figure visualizes the original and transformed 3D Gaussians for
+            defocus blur. With a given view whose near plane is defocused, the transformed
+            3D Gaussians show larger scales than those of the original 3D Gaussians to
+            model defocus blur on the near plane (blur-bordered images). Meanwhile, the
+            transformed 3D Gaussians keep very similar shapes to the original ones for sharp
+            objects in the far plane (red-bordered images). 
+					</p>
+          <div style="margin-top: 30px">
+            <div style="display: inline-block; width:100%; ">
+              <div class="img_tag" style="padding-right:20px"><h3>Point cloud visualization for camera motion blur</h3></div>
+            </div>
+            <img src="./static/images/pointcloud_visualization.jpg" style="width:100%">
+
+            <p align="justify">This figure depicts point clouds of the original 3D Gaussians and transformed 3D Gaussians.
+              The point cloud of the transformed 3D Gaussians exhibits camera movements when the camera moves left to right.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Selective Gaussian blur adjustment</h2>
+					<img src="./static/images/selective_figure_ext.jpg" style="width:100%">
+
+          <p align="justify">Selective Gaussian blur adjustment. As delineated in this figure, our methodology
+            adeptly harnesses the δrj , δsj both emanating from compact Multi-Layer Perceptrons
+            (MLP), enabling the inversion of Gaussian blur regions or the comprehensive modulation of overall blurriness and sharpness. 
+            With the Transformation of δrj , δsj , our framework facilitates the nuanced blurring of proximal regions akin to A, as well as
+            the deft blurring of distant locales akin to B. Furthermore, it offers the capability to
+            manipulate the global blurriness or sharpness, exemplified by adjustments akin to C and D.
+					</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container ">
+      <div class=" has-text-centered">
+        <h2 class="title is-3">Visual Comparisons</h2>
+        <div class="content has-text-justified">
+          <p>
+
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <!-- Visual Effects. -->
+          <div class="column">
+            <div class="content">
+              <div class="columns is-centered">
+                <div class="column is-full-width">
+                  <div id="example1" class="bal-container-small">
+
+                    <div class="bal-after">
+                      <img src="./static/images/comparsion/cake.png">
+                      <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                        Ours
+                      </div>
+                    </div>
+                    
+                    <div class="bal-before" style="width:96.4968152866242%;">
+                      <div class="bal-before-inset" style="width: 539px;">
+                        <img src="./static/images/comparsion/gs_cake.png">
+                        <div class="bal-beforePosition beforeLabel">
+                          3D-GS
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bal-handle" style="left:96.4968152866242%;">
+                      <span class=" handle-left-arrow"></span>
+                      <span class="handle-right-arrow"></span>
+                    </div>
+
+                  </div>
+
+
+                  <div id="example2" class="bal-container-small">
+
+                    <div class="bal-after">
+                      <img src="./static/images/comparsion/cisco.png">
+                      <div class="bal-afterPosition afterLabel">
+                        Ours
+                      </div>
+                    </div>
+
+                    <div class="bal-before" style="width: 50%;">
+                      <div class="bal-before-inset" style="width: 539px;">
+                        <img src="./static/images/comparsion/gs_cisco.png">
+                        <div class="bal-beforePosition beforeLabel">
+                          3D-GS
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bal-handle" style="left: 50%;">
+                      <span class=" handle-left-arrow"></span>
+                      <span class="handle-right-arrow"></span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--/ Visual Effects. -->
+
+          <!-- Matting. -->
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+
+                <div id="example4" class="bal-container-small">
+                  <div class="bal-after">
+                    <img src="./static/images/comparsion/caps.png">
+                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                      Ours
+                    </div>
+                  </div>
+
+                  <div class="bal-before" style="width:62.10191082802548%;">
+                    <div class="bal-before-inset" style="width: 539px;">
+                      <img src="./static/images/comparsion/gs_caps.png">
+                      <div class="bal-beforePosition beforeLabel">
+                        3D-GS
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bal-handle" style="left:62.10191082802548%;">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                  </div>
+
+                </div>
+
+                <div id="example5" class="bal-container-small">
+                  <div class="bal-after">
+                    <img src="./static/images/comparsion/tools.png">
+                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                      Ours
+                    </div>
+                  </div>
+
+                  <div class="bal-before" style="width:56.77179962894249%;">
+                    <div class="bal-before-inset" style="width: 628px;">
+                      <img src="./static/images/comparsion/gs_tools.png">
+                      <div class="bal-beforePosition beforeLabel">
+                        3D-GS
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bal-handle" style="left:56.77179962894249%;">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new BeforeAfter({
+      id: '#example1'
+    });
+    new BeforeAfter({
+      id: '#example2'
+    });
+    new BeforeAfter({
+      id: '#example4'
+    });
+    new BeforeAfter({
+      id: '#example5'
+    });
+
+  </script>
+  
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTex</h2>
+    <pre><code>
+      @inproceedings{youk2024fmanet,
+        author    = {Geunhyuk Youk and Jihyong Oh and Munchurl Kim},
+        title     = {FMA-Net: Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring},
+        booktitle = {CVPR},
+        year      = {2024},
+       }
+      @inproceedings{zhang2023extracting,
+        title={Extracting motion and appearance via inter-frame attention for efficient video frame interpolation},
+        author={Zhang, Guozhen and Zhu, Yuhan and Wang, Haonan and Chen, Youxin and Wu, Gangshan and Wang, Limin},
+        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+        pages={5682--5692},
+        year={2023}
+      }
+      @article{cheng2023segment,
+        title={Segment and Track Anything},
+        author={Cheng, Yangming and Li, Liulei and Xu, Yuanyou and Li, Xiaodi and Yang, Zongxin and Wang, Wenguan and Yang, Yi},
+        journal={arXiv preprint arXiv:2305.06558},
+        year={2023}
+      }
+      @article{kirillov2023segment,
+        title={Segment anything},
+        author={Kirillov, Alexander and Mintun, Eric and Ravi, Nikhila and Mao, Hanzi and Rolland, Chloe and Gustafson, Laura and Xiao, Tete and Whitehead, Spencer and Berg, Alexander C and Lo, Wan-Yen and others},
+        journal={arXiv preprint arXiv:2304.02643},
+        year={2023}
+      }
+      @inproceedings{yang2022deaot,
+        title={Decoupling Features in Hierarchical Propagation for Video Object Segmentation},
+        author={Yang, Zongxin and Yang, Yi},
+        booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+        year={2022}
+      }
+      @inproceedings{yang2021aot,
+        title={Associating Objects with Transformers for Video Object Segmentation},
+        author={Yang, Zongxin and Wei, Yunchao and Yang, Yi},
+        booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+        year={2021}
+      }
+      @article{liu2023grounding,
+        title={Grounding dino: Marrying dino with grounded pre-training for open-set object detection},
+        author={Liu, Shilong and Zeng, Zhaoyang and Ren, Tianhe and Li, Feng and Zhang, Hao and Yang, Jie and Li, Chunyuan and Yang, Jianwei and Su, Hang and Zhu, Jun and others},
+        journal={arXiv preprint arXiv:2303.05499},
+        year={2023}
+      }
+      @inproceedings{gong21b_interspeech,
+        author={Yuan Gong and Yu-An Chung and James Glass},
+        title={AST: Audio Spectrogram Transformer},
+        booktitle={Proc. Interspeech 2021},
+        pages={571--575},
+        doi={10.21437/Interspeech.2021-698}
+        year={2021} 
+      }
+    </code></pre>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website borrowed template from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
