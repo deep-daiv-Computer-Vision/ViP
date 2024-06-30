@@ -117,17 +117,28 @@ body {
 
 }
 
+
 .results-carousel .item {
+  transform: scale(1.0); /* 1.5배로 확대 */
+  transform-origin: center center; /* 확대의 기준점을 중앙으로 설정 */
   margin: 5px;
   overflow: hidden;
   border: 1px solid #bbb;
   border-radius: 10px;
   padding: 0;
   font-size: 0;
+  position: relative;
+  padding-bottom: 84.375%;
 }
 
 .results-carousel video {
   margin: 0;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
