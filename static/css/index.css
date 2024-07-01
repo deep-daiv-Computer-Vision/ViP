@@ -109,13 +109,13 @@ body {
     height: 100%;
 }
 
-#main-slider {
-  transform: translateX(-14%);
-}
+/* #main-slider {
+  transform: translateX(-3.33%);
+} */
 
 .results-carousel {
   overflow: hidden;
-  width: 145%; 
+  /* width: 100%;  */
 }
 
 .results-carousel .item {
