@@ -91,11 +91,11 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Motivation</h2>
           <div align="center">
-            <img src="static/images/FPS_curve.jpg" style="width:100%">
+            <img src="static/images/motivation.png" style="width:100%">
           </div>
           <div class="content has-text-justified">
             <p>
-              Novel-view synthesis of scenes acquired with several images or videos has been revolutionized by Radiance Field techniques. However, their high visual quality was achieved only with neural networks, which are costly to train and do not provide real-time rendering. Recently, 3D Gaussians splatting-based approach has been proposed to model the 3D scene, and it achieves state-of-the-art visual quality as well as renders in real-time. However, this approach suffers from severe degradation in the rendering quality if the training images are blurry. Several previous studies have attempted to render clean and sharp images from blurry input images using neural fields. However, the majority of those works are designed only for volumetric rendering-based neural fields and are not applicable to rasterization-based approaches. To fill this gap, we propose a novel neural field-based deblurring framework for the recently proposed rasterization-based approaches, 3D Gaussians, and rasterization. Specifically, we employ a small Multi-Layer Perceptron (MLP), which manipulates the covariance of each 3D Gaussian to model the scene blurriness. While deblurring 3D Gaussian Splatting can still enjoy real-time rendering, it can reconstruct fine and sharp details from blurry images. A variety of experiments have been conducted on the benchmark, and the results have revealed the effectiveness of our approach for deblurring.
+             내용 채우기
             </p>
 
           </div>
@@ -105,18 +105,18 @@
     </div>
   </section>
 
-  <!--Pipeline-->
+  <!--Method-->
   <section class="section" style="padding: 30px;">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Pipeline</h2>
           <div align="center">
-            <img src="static/images/FPS_curve.jpg" style="width:100%">
+            <img src="static/images/pipeline.png" style="width:100%">
           </div>
           <div class="content has-text-justified">
             <p>
-              Novel-view synthesis of scenes acquired with several images or videos has been revolutionized by Radiance Field techniques. However, their high visual quality was achieved only with neural networks, which are costly to train and do not provide real-time rendering. Recently, 3D Gaussians splatting-based approach has been proposed to model the 3D scene, and it achieves state-of-the-art visual quality as well as renders in real-time. However, this approach suffers from severe degradation in the rendering quality if the training images are blurry. Several previous studies have attempted to render clean and sharp images from blurry input images using neural fields. However, the majority of those works are designed only for volumetric rendering-based neural fields and are not applicable to rasterization-based approaches. To fill this gap, we propose a novel neural field-based deblurring framework for the recently proposed rasterization-based approaches, 3D Gaussians, and rasterization. Specifically, we employ a small Multi-Layer Perceptron (MLP), which manipulates the covariance of each 3D Gaussian to model the scene blurriness. While deblurring 3D Gaussian Splatting can still enjoy real-time rendering, it can reconstruct fine and sharp details from blurry images. A variety of experiments have been conducted on the benchmark, and the results have revealed the effectiveness of our approach for deblurring.
+              파이프라인설명
             </p>
 
           </div>
@@ -125,11 +125,33 @@
 
     </div>
   </section>
+
+  <!--Instant Slow-Mo-->
+  <section class="section" style="padding: 30px;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Instant Slow-Mo</h2>
+          <!-- <div align="center">
+            <img src="static/images/FPS_curve.jpg" style="width:100%">
+          </div> -->
+          <div class="content has-text-justified">
+            <p>
+             슬로우모션 설명
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 <!-- Focus Transition -->
 <section class="section" style="padding: 30px">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <h2 class="title is-3">Focus Transition</h2>
+      <h2 class="title is-3">Focus Transition Examples</h2>
     </div>
   </div>
 </section>
@@ -172,8 +194,136 @@
   </div>
 </section>
 
+  <section class="section">
+    <div class="container ">
+      <div class=" has-text-centered">
+        <h2 class="title is-3">Visual Comparisons</h2>
+        <div class="content has-text-justified">
+          <p>
 
-  
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <!-- Visual Effects. -->
+          <div class="column">
+            <div class="content">
+              <div class="columns is-centered">
+                <div class="column is-full-width">
+                  <div id="example1" class="bal-container-small" style="padding-bottom: 150%;">
+                    <div class="bal-after">
+                      <img src="./static/images/comparsion/cat_ours.png">
+                      <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                        Ours
+                      </div>
+                    </div>
+                    
+                    <div class="bal-before" style="width:96.4968152866242%;">
+                      <div class="bal-before-inset" style="width: 539px;">
+                        <img src="./static/images/comparsion/cat_blurred.png">
+                        <div class="bal-beforePosition beforeLabel">
+                          Origin
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bal-handle" style="left:96.4968152866242%;">
+                      <span class=" handle-left-arrow"></span>
+                      <span class="handle-right-arrow"></span>
+                    </div>
+
+                  </div>
+
+
+                  <!-- <div id="example2" class="bal-container-small">
+
+                    <div class="bal-after">
+                      <img src="./static/images/comparsion/cisco.png">
+                      <div class="bal-afterPosition afterLabel">
+                        Ours
+                      </div>
+                    </div>
+
+                    <div class="bal-before" style="width: 50%;">
+                      <div class="bal-before-inset" style="width: 539px;">
+                        <img src="./static/images/comparsion/gs_cisco.png">
+                        <div class="bal-beforePosition beforeLabel">
+                          Origin
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bal-handle" style="left: 50%;">
+                      <span class=" handle-left-arrow"></span>
+                      <span class="handle-right-arrow"></span>
+                    </div>
+
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--/ Visual Effects. -->
+
+          <!-- Matting. -->
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+
+                <div id="example4" class="bal-container-small" style="padding-bottom: 150%;">
+                  <div class="bal-after">
+                    <img src="./static/images/comparsion/pancake_ours.png">
+                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                      Ours
+                    </div>
+                  </div>
+
+                  <div class="bal-before" style="width:62.10191082802548%;">
+                    <div class="bal-before-inset" style="width: 539px;">
+                      <img src="./static/images/comparsion/pancake_blurred.png">
+                      <div class="bal-beforePosition beforeLabel">
+                        Origin
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bal-handle" style="left:62.10191082802548%;">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                  </div>
+
+                </div>
+
+                <!-- <div id="example5" class="bal-container-small">
+                  <div class="bal-after">
+                    <img src="./static/images/comparsion/tools.png">
+                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                      Ours
+                    </div>
+                  </div>
+
+                  <div class="bal-before" style="width:56.77179962894249%;">
+                    <div class="bal-before-inset" style="width: 628px;">
+                      <img src="./static/images/comparsion/gs_tools.png">
+                      <div class="bal-beforePosition beforeLabel">
+                        Origin
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bal-handle" style="left:56.77179962894249%;">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                  </div>
+
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="section">
     <div class="container is-max-desktop">
       <!-- Concurrent Work. -->
@@ -240,185 +390,19 @@
       </div>
     </div>
   </section>
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <!-- Concurrent Work. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Visualization of Defocus and Camera Motion blur</h2>
-          <div style="display: inline-block; width:100%; ">
-						<div class="img_tag" style="padding-right:20px"><h3>Gaussians visualization for defocus blur</h3></div>
-					</div>
-					<img src="./static/images/gaussian_visualization.jpg" style="width:100%">
-
-          <p align="justify">This figure visualizes the original and transformed 3D Gaussians for
-            defocus blur. With a given view whose near plane is defocused, the transformed
-            3D Gaussians show larger scales than those of the original 3D Gaussians to
-            model defocus blur on the near plane (blur-bordered images). Meanwhile, the
-            transformed 3D Gaussians keep very similar shapes to the original ones for sharp
-            objects in the far plane (red-bordered images). 
-					</p>
-          <div style="margin-top: 30px">
-            <div style="display: inline-block; width:100%; ">
-              <div class="img_tag" style="padding-right:20px"><h3>Point cloud visualization for camera motion blur</h3></div>
-            </div>
-            <img src="./static/images/pointcloud_visualization.jpg" style="width:100%">
-
-            <p align="justify">This figure depicts point clouds of the original 3D Gaussians and transformed 3D Gaussians.
-              The point cloud of the transformed 3D Gaussians exhibits camera movements when the camera moves left to right.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container ">
-      <div class=" has-text-centered">
-        <h2 class="title is-3">Visual Comparisons</h2>
-        <div class="content has-text-justified">
-          <p>
-
-          </p>
-        </div>
-        <div class="columns is-centered">
-          <!-- Visual Effects. -->
-          <div class="column">
-            <div class="content">
-              <div class="columns is-centered">
-                <div class="column is-full-width">
-                  <div id="example1" class="bal-container-small">
-
-                    <div class="bal-after">
-                      <img src="./static/images/comparsion/cake.png">
-                      <div class="bal-afterPosition afterLabel" style="z-index:1;">
-                        Ours
-                      </div>
-                    </div>
-                    
-                    <div class="bal-before" style="width:96.4968152866242%;">
-                      <div class="bal-before-inset" style="width: 539px;">
-                        <img src="./static/images/comparsion/gs_cake.png">
-                        <div class="bal-beforePosition beforeLabel">
-                          3D-GS
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="bal-handle" style="left:96.4968152866242%;">
-                      <span class=" handle-left-arrow"></span>
-                      <span class="handle-right-arrow"></span>
-                    </div>
-
-                  </div>
-
-
-                  <div id="example2" class="bal-container-small">
-
-                    <div class="bal-after">
-                      <img src="./static/images/comparsion/cisco.png">
-                      <div class="bal-afterPosition afterLabel">
-                        Ours
-                      </div>
-                    </div>
-
-                    <div class="bal-before" style="width: 50%;">
-                      <div class="bal-before-inset" style="width: 539px;">
-                        <img src="./static/images/comparsion/gs_cisco.png">
-                        <div class="bal-beforePosition beforeLabel">
-                          3D-GS
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="bal-handle" style="left: 50%;">
-                      <span class=" handle-left-arrow"></span>
-                      <span class="handle-right-arrow"></span>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--/ Visual Effects. -->
-
-          <!-- Matting. -->
-          <div class="column">
-            <div class="columns is-centered">
-              <div class="column content">
-
-                <div id="example4" class="bal-container-small">
-                  <div class="bal-after">
-                    <img src="./static/images/comparsion/caps.png">
-                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
-                      Ours
-                    </div>
-                  </div>
-
-                  <div class="bal-before" style="width:62.10191082802548%;">
-                    <div class="bal-before-inset" style="width: 539px;">
-                      <img src="./static/images/comparsion/gs_caps.png">
-                      <div class="bal-beforePosition beforeLabel">
-                        3D-GS
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="bal-handle" style="left:62.10191082802548%;">
-                    <span class=" handle-left-arrow"></span>
-                    <span class="handle-right-arrow"></span>
-                  </div>
-
-                </div>
-
-                <div id="example5" class="bal-container-small">
-                  <div class="bal-after">
-                    <img src="./static/images/comparsion/tools.png">
-                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
-                      Ours
-                    </div>
-                  </div>
-
-                  <div class="bal-before" style="width:56.77179962894249%;">
-                    <div class="bal-before-inset" style="width: 628px;">
-                      <img src="./static/images/comparsion/gs_tools.png">
-                      <div class="bal-beforePosition beforeLabel">
-                        3D-GS
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="bal-handle" style="left:56.77179962894249%;">
-                    <span class=" handle-left-arrow"></span>
-                    <span class="handle-right-arrow"></span>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <script>
     new BeforeAfter({
       id: '#example1'
     });
-    new BeforeAfter({
-      id: '#example2'
-    });
+    // new BeforeAfter({
+    //   id: '#example2'
+    // });
     new BeforeAfter({
       id: '#example4'
     });
-    new BeforeAfter({
-      id: '#example5'
-    });
+    // new BeforeAfter({
+    //   id: '#example5'
+    // });
 
   </script>
   
