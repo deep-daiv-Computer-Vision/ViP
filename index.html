@@ -59,10 +59,10 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <!-- <span class="author-block"><sup>1</sup>Konkuk University</span>&emsp;
+              <span class="author-block"><sup>1</sup>Konkuk University</span>&emsp;
               <span class="author-block"><sup>2</sup>Hongik University</span>&emsp;
               <span class="author-block"><sup>3</sup>Hanyang University</span>&emsp;
-              <span class="author-block"><sup>4</sup>Sungkyunkwan University</span><br> -->
+              <span class="author-block"><sup>4</sup>Sungkyunkwan University</span><br>
               <span class="author-block"><sup>*</sup><a href="https://deepdaiv.oopy.io/">deep daiv.</a></span>&emsp;
               <span class="author-block"><sup>&dagger;</sup>Project Lead</span>&emsp;
             </div>
@@ -84,77 +84,15 @@
       </div>
     </div>
   </section>
-  <!-- Motivation-->
-  <section class="section" style="padding: 10px;">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Motivation</h2>
-          <div align="center">
-            <img src="static/images/motivation.png" style="width:100%">
-          </div>
-          <div class="content has-text-justified">
-            <p>
-             내용 채우기
-            </p>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!--Method-->
-  <section class="section" style="padding: 30px;">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Pipeline</h2>
-          <div align="center">
-            <img src="static/images/pipeline.png" style="width:100%">
-          </div>
-          <div class="content has-text-justified">
-            <p>
-              파이프라인설명
-            </p>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!--Instant Slow-Mo-->
-  <section class="section" style="padding: 30px;">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Instant Slow-Mo</h2>
-          <!-- <div align="center">
-            <img src="static/images/FPS_curve.jpg" style="width:100%">
-          </div> -->
-          <div class="content has-text-justified">
-            <p>
-             슬로우모션 설명
-            </p>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
 
 <!-- Focus Transition -->
-<section class="section" style="padding: 30px">
+<!-- <section class="section" style="padding: 30px">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <h2 class="title is-3">Focus Transition Examples</h2>
     </div>
   </div>
-</section>
+</section> -->
 <section class="hero is-light is-small">
   <div class="hero-body" id="main-slider">
     <div class="container">
@@ -194,15 +132,52 @@
   </div>
 </section>
 
+  <!-- Motivation-->
+  <section class="section" style="padding: 30px;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Motivation</h2>
+          <div align="center">
+            <img src="static/images/motivation.png" style="width:100%">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+             내용 채우기
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Method-->
+  <section class="section" style="padding: 30px;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Methods</h2>
+          <div align="center">
+            <img src="static/images/pipeline.png" style="width:100%">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              파이프라인설명
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
   <section class="section">
     <div class="container ">
       <div class=" has-text-centered">
         <h2 class="title is-3">Visual Comparisons</h2>
-        <div class="content has-text-justified">
-          <p>
-
-          </p>
-        </div>
+        compensation 사진추가
         <div class="columns is-centered">
           <!-- Visual Effects. -->
           <div class="column">
@@ -216,7 +191,6 @@
                         Ours
                       </div>
                     </div>
-                    
                     <div class="bal-before" style="width:96.4968152866242%;">
                       <div class="bal-before-inset" style="width: 539px;">
                         <img src="./static/images/comparsion/cat_blurred.png">
@@ -324,9 +298,46 @@
       </div>
     </div>
   </section>
-  <section class="section">
+  <!--Video Frame interpolation-->
+  <section class="section" style="padding: 30px;">
+    <div class="container is-max-desktop" style="max-width: 100%;">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Video Frame interpolation</h2>
+                <p align="justify" style="padding-left: 50px"> VFI설명
+                </p>
+                <div style="display: flex; justify-content: center; gap: 10px;">
+                    <div style="position: relative; width: 30%;">
+                        <video poster="" id="cupcake" autoplay controls muted loop playsinline style="width: 100%; border-radius: 10px;">
+                            <source src="./static/videos/cat_before_vfi.mp4" type="video/mp4">
+                        </video>
+                        <div class="bal-beforePosition beforeLabel" style="position: absolute;">
+                          Origin
+                        </div>
+                    </div>
+                    <div style="position: relative; width: 30%;">
+                        <video poster="" id="sausage" autoplay controls muted loop playsinline style="width: 100%; border-radius: 10px;">
+                            <source src="./static/videos/cat_after_vfi.mp4" type="video/mp4">
+                        </video>
+                        <div class="bal-beforePosition beforeLabel" style="position: absolute;">
+                          EMA-VFI
+                        </div>
+                    </div>
+                    <div style="position: relative; width: 30%;">
+                        <video poster="" id="sausage" autoplay controls muted loop playsinline style="width: 100%; border-radius: 10px;">
+                            <source src="./static/videos/cat_galaxyAI.mp4" type="video/mp4">
+                        </video>
+                        <div class="bal-beforePosition beforeLabel" style="position: absolute;">
+                          Galaxy AI
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- <section class="section">
     <div class="container is-max-desktop">
-      <!-- Concurrent Work. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
           <h2 class="title is-3">Deblurring 3D Gaussians</h2>
@@ -346,14 +357,14 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   
   <section class="section">
     <div class="container is-max-desktop">
       <!-- Concurrent Work. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Compensation for Sparse Point Cloud</h2>
+          <h2 class="title is-3">Result</h2>
           <div style="display: inline-block; width:33%; ">
 						<div class="img_tag" style="padding-right:20px"><h3>Input Image</h3></div>
 					</div>
@@ -378,12 +389,7 @@
 					</div>
 					<img src="./static/images/compensation_depth.jpg" style="width:100%">
 
-          <p align="justify">3D-GS's reconstruction quality heavily relies on the initial point cloud which is obtained from structure-from-motion (SfM). 
-						However, SfM produces only sparse point clouds if the given images are blurry. Even worse, if the scene has a large depth of field 
-						which is prevalent in defocus blurry scenes, SfM hardly extracts any points that lie on the far end of the scene.
-						To make a dense point cloud, we add additional points on the periphery of the existing points using K-Nearest-Neighbor (KNN) algorithm during the training.
-						Furthermore, we prune 3D Gaussians depending on their relative depth. We loosely prune the 3D Gaussians placed on the far edge of the scene to keep 
-						more 3D Gaussians on the far plane.
+          <p align="justify"> 최종 새 영상 추가
 					</p>
 
         </div>
