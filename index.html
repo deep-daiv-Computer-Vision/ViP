@@ -176,8 +176,11 @@
   <section class="section">
     <div class="container ">
       <div class=" has-text-centered">
-        <h2 class="title is-3">Visual Comparisons</h2>
-        compensation 사진추가
+        <h2 class="title is-3">Visual Comparisons</h2> 
+        <div style="display: flex; justify-content: center; gap: 50px; padding-bottom: 30px;">
+          <img src="static/images/comparsion/cat_vis_comparison.jpg" style="width:43%">
+          <img src="static/images/comparsion/pancake_vis_comparison.jpg" style="width:43%">
+        </div>
         <div class="columns is-centered">
           <!-- Visual Effects. -->
           <div class="column">
@@ -301,37 +304,37 @@
   <!--Video Frame interpolation-->
   <section class="section" style="padding: 30px;">
     <div class="container is-max-desktop" style="max-width: 100%;">
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-                <h2 class="title is-3">Video Frame interpolation</h2>
-                <div style="display: flex; justify-content: center; gap: 10px;">
-                  <div style="position: relative; width: 30%;">
-                      <video poster="" id="cupcake" autoplay controls muted loop playsinline style="width: 100%; border-radius: 10px;">
-                          <source src="./static/videos/cat_before_vfi.mp4" type="video/mp4">
-                      </video>
-                      <div class="bal-beforePosition beforeLabel" style="position: absolute;">
-                        Origin
-                      </div>
-                  </div>
-                  <div style="position: relative; width: 30%;">
-                      <video poster="" id="sausage" autoplay controls muted loop playsinline style="width: 100%; border-radius: 10px;">
-                          <source src="./static/videos/cat_after_vfi.mp4" type="video/mp4">
-                      </video>
-                      <div class="bal-beforePosition beforeLabel" style="position: absolute;">
-                        EMA-VFI
-                      </div>
-                  </div>
-                  <div style="position: relative; width: 30%;">
-                      <video poster="" id="sausage" autoplay controls muted loop playsinline style="width: 100%; border-radius: 10px;">
-                          <source src="./static/videos/cat_galaxyAI.mp4" type="video/mp4">
-                      </video>
-                      <div class="bal-beforePosition beforeLabel" style="position: absolute;">
-                        Galaxy AI
-                      </div>
-                  </div>
+      <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+              <h2 class="title is-3">Video Frame interpolation</h2>
+              <div style="display: flex; justify-content: center; gap: 10px;">
+                <div style="position: relative; width: 30%;">
+                    <video poster="" id="cupcake" autoplay controls muted loop playsinline style="width: 100%; border-radius: 10px;">
+                        <source src="./static/videos/cat_before_vfi.mp4" type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel" style="position: absolute;">
+                      Origin
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div style="position: relative; width: 30%;">
+                    <video poster="" id="sausage" autoplay controls muted loop playsinline style="width: 100%; border-radius: 10px;">
+                        <source src="./static/videos/cat_after_vfi.mp4" type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel" style="position: absolute;">
+                      EMA-VFI
+                    </div>
+                </div>
+                <div style="position: relative; width: 30%;">
+                    <video poster="" id="sausage" autoplay controls muted loop playsinline style="width: 100%; border-radius: 10px;">
+                        <source src="./static/videos/cat_galaxyAI.mp4" type="video/mp4">
+                    </video>
+                    <div class="bal-beforePosition beforeLabel" style="position: absolute;">
+                      Galaxy Instant Slow-Mo
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
     </div>
   </section>
   <!-- <section class="section">
