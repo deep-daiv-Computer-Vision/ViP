@@ -32,6 +32,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
@@ -76,6 +77,13 @@
                     </span>
                     <span>Code</span>
                   </a>
+                  <a href="https://deepdaiv.notion.site/60-c6005161957e433dbc1ee3a3297dfec1?pvs=74" 
+                    class="external-link button is-normal is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-file"></i>
+                    </span>
+                    <span>Project Detail</span>
+                  </a>
                 </span>
               </div>
             </div>
@@ -85,52 +93,7 @@
     </div>
   </section>
 
-<!-- Focus Transition -->
-<!-- <section class="section" style="padding: 30px">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <h2 class="title is-3">Focus Transition Examples</h2>
-    </div>
-  </div>
-</section> -->
-<section class="hero is-light is-small">
-  <div class="hero-body" id="main-slider">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <video poster="" id="seal" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/pancake_compare_final.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" id="coral" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/cat_compare_final_final.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" id="cupcake" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/pancake_compare_final.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" id="sausage" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/cat_compare_final_final.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" id="tools" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/pancake_compare_final.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item">
-          <video poster="" id="tools" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/cat_compare_final_final.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
   <!-- Motivation-->
   <section class="section" style="padding: 30px;">
@@ -138,14 +101,11 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Motivation</h2>
-          <div align="center">
-            <img src="static/images/motivation.png" style="width:100%">
+          <div align="center" style="padding: 50px 0px 50px 0px;">
+            <img src="static/images/motivation.jpg" style="width:100%; transform: scale(1.3);">
           </div>
-          <div class="content has-text-justified">
-            <p>
-             내용 채우기
-            </p>
-
+          <div align="center" style="padding: 50px 0px 50px 0px;">
+            <img src="static/images/motivation2.jpg" style="width:100%; transform: scale(1.3);">
           </div>
         </div>
       </div>
@@ -158,143 +118,52 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Methods</h2>
-          <div align="center">
-            <img src="static/images/pipeline.png" style="width:100%">
-          </div>
-          <div class="content has-text-justified">
-            <p>
-              파이프라인설명
-            </p>
-
+          <h2 class="title is-3">Pipeline</h2>
+          <div align="center" style="padding: 100px 0px 123px 0px;">
+            <img src="static/images/pipeline.png" style="width:100%; transform: scale(1.5);">
           </div>
         </div>
       </div>
-
     </div>
   </section>
-  <section class="section">
-    <div class="container ">
-      <div class=" has-text-centered">
-        <h2 class="title is-3">Visual Comparisons</h2> 
-        <div style="display: flex; justify-content: center; gap: 50px; padding-bottom: 30px;">
-          <img src="static/images/comparsion/cat_vis_comparison.jpg" style="width:43%">
-          <img src="static/images/comparsion/pancake_vis_comparison.jpg" style="width:43%">
-        </div>
-        <div class="columns is-centered">
-          <!-- Visual Effects. -->
-          <div class="column">
-            <div class="content">
-              <div class="columns is-centered">
-                <div class="column is-full-width">
-                  <div id="example1" class="bal-container-small" style="padding-bottom: 150%;">
-                    <div class="bal-after">
-                      <img src="./static/images/comparsion/cat_ours.png">
-                      <div class="bal-afterPosition afterLabel" style="z-index:1;">
-                        Ours
-                      </div>
-                    </div>
-                    <div class="bal-before" style="width:96.4968152866242%;">
-                      <div class="bal-before-inset" style="width: 539px;">
-                        <img src="./static/images/comparsion/cat_blurred.png">
-                        <div class="bal-beforePosition beforeLabel">
-                          Origin
-                        </div>
-                      </div>
-                    </div>
 
-                    <div class="bal-handle" style="left:96.4968152866242%;">
-                      <span class=" handle-left-arrow"></span>
-                      <span class="handle-right-arrow"></span>
-                    </div>
-
-                  </div>
-
-
-                  <!-- <div id="example2" class="bal-container-small">
-
-                    <div class="bal-after">
-                      <img src="./static/images/comparsion/cisco.png">
-                      <div class="bal-afterPosition afterLabel">
-                        Ours
-                      </div>
-                    </div>
-
-                    <div class="bal-before" style="width: 50%;">
-                      <div class="bal-before-inset" style="width: 539px;">
-                        <img src="./static/images/comparsion/gs_cisco.png">
-                        <div class="bal-beforePosition beforeLabel">
-                          Origin
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="bal-handle" style="left: 50%;">
-                      <span class=" handle-left-arrow"></span>
-                      <span class="handle-right-arrow"></span>
-                    </div>
-
-                  </div> -->
-                </div>
-              </div>
+  <section class="section" style="padding-top: 0; padding-bottom: 0;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <div style="display: inline-block; width:100%;">
+            <div class="img_tag">
+              <h3>Deblurring & SR (FMA-Net)</h3>
+              <img src="static/images/FMA.png" style="width:100%; height:auto; padding: 10px">
             </div>
           </div>
-
-          <!--/ Visual Effects. -->
-
-          <!-- Matting. -->
-          <div class="column">
-            <div class="columns is-centered">
-              <div class="column content">
-
-                <div id="example4" class="bal-container-small" style="padding-bottom: 150%;">
-                  <div class="bal-after">
-                    <img src="./static/images/comparsion/pancake_ours.png">
-                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
-                      Ours
-                    </div>
-                  </div>
-
-                  <div class="bal-before" style="width:62.10191082802548%;">
-                    <div class="bal-before-inset" style="width: 539px;">
-                      <img src="./static/images/comparsion/pancake_blurred.png">
-                      <div class="bal-beforePosition beforeLabel">
-                        Origin
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="bal-handle" style="left:62.10191082802548%;">
-                    <span class=" handle-left-arrow"></span>
-                    <span class="handle-right-arrow"></span>
-                  </div>
-
-                </div>
-
-                <!-- <div id="example5" class="bal-container-small">
-                  <div class="bal-after">
-                    <img src="./static/images/comparsion/tools.png">
-                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
-                      Ours
-                    </div>
-                  </div>
-
-                  <div class="bal-before" style="width:56.77179962894249%;">
-                    <div class="bal-before-inset" style="width: 628px;">
-                      <img src="./static/images/comparsion/gs_tools.png">
-                      <div class="bal-beforePosition beforeLabel">
-                        Origin
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="bal-handle" style="left:56.77179962894249%;">
-                    <span class=" handle-left-arrow"></span>
-                    <span class="handle-right-arrow"></span>
-                  </div>
-
-                </div> -->
-              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top: 0; padding-bottom: 0;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <div style="display: inline-block; width:100%;">
+            <div class="img_tag">
+              <h3>Segmentation & Tracking (SAM-Track)</h3>
+              <video controls style="width:100%; height:auto; padding: 10px">
+                <source src="static/videos/SAM-Track.mp4" type="video/mp4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top: 0;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <div style="display: inline-block; width:100%;">
+            <div class="img_tag">
+              <h3>Gaussian Blurring (OpenCV)</h3>
+              <img src="static/images/Blurring.png" style="width:100%; height:auto; padding: 10px">
             </div>
           </div>
         </div>
@@ -302,11 +171,13 @@
     </div>
   </section>
   <!--Video Frame interpolation-->
-  <section class="section" style="padding: 30px;">
+  <section class="section" style="padding: 0px;">
     <div class="container is-max-desktop" style="max-width: 100%;">
       <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-              <h2 class="title is-3">Video Frame interpolation</h2>
+            <div class="img_tag">
+              <h3>Video Frame Interpolation (Optional)</h3>
+            </div>
               <div style="display: flex; justify-content: center; gap: 10px;">
                 <div style="position: relative; width: 30%;">
                     <video poster="" id="cupcake" autoplay controls muted loop playsinline style="width: 100%; border-radius: 10px;">
@@ -337,78 +208,136 @@
       </div>
     </div>
   </section>
-  <!-- <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Deblurring 3D Gaussians</h2>
-          <div class="content has-text-justified">
-            <div style="margin-top: 20px">
-              <img src="./static/images/workflow.png">
-            </div>
-            <p align="justify">We learn the deblurring by transforming the geometry of the 3D Gaussians. To do so, we have employed an MLP that takes
-              the position, rotation, scale, and viewing direction of 3D Gaussians as inputs, and outputs offsets for rotation and scale.
-              Then these offsets are element-wisely multiplied to rotation and scale, respectively, to obtain the transformed geometry of the 3D Gaussians.</p>
-            </div>
-            <img src="./static/images/deltas3_page.jpg">
-            <p align="justify">Since we predict the offsets for each Gaussian, we can selectively enlarge the covariances of Gaussians where the parts in the training images are blurred. This flexibility enables us to
-              effectively implement deblurring capability in 3D-GS. On the other hand, a naive approach to blurring the rendered image is simply to apply a Gaussian kernel which is not capable of handling each part of the image differently but blurs
-              the entire image.</p>
-          </div>
+
+  <section class="section" style="padding: 100px 0px 50px 0px; margin: 0;">
+    <div class="container ">
+      <div class=" has-text-centered">
+        <h2 class="title is-3">Visual Comparisons</h2> 
+        <div style="display: flex; justify-content: center; gap: 50px; padding-bottom: 30px;">
+          <img src="static/images/comparsion/viscombird3.jpg" style="width:43.5%">
+          <img src="static/images/comparsion/viscombird2.jpg" style="width:43.5%">
         </div>
-      </div>
-    </div>
-  </section> -->
-  
-  <section class="section">
-    <div class="container is-max-desktop">
-      <!-- Concurrent Work. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Result</h2>
-          <!-- <div style="display: inline-block; width:33%; ">
-						<div class="img_tag" style="padding-right:20px"><h3>Input Image</h3></div>
-					</div>
-					<div style="display: inline-block; width:33%">
-						<div class="img_tag"><h3>w/o Compensation</h3></div>
-					</div>
-					<div style="display: inline-block; width:33%">
-						<div class="img_tag"><h3>w/ Compensation (Ours)</h3></div>
-					</div>
-					<img src="./static/images/compensation.jpg" style="width:100%">
+        <div class="columns is-centered">
+          <!-- Visual Effects. -->
+          <div class="column">
+            <div class="content">
+              <div class="columns is-centered">
+                <div class="column is-full-width">
+                  <div id="example1" class="bal-container-small" style="padding-bottom: 150%;">
+                    <div class="bal-after">
+                      <img src="./static/images/comparsion/3_comp_after_23.jpg">
+                      <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                        Ours
+                      </div>
+                    </div>
+                    <div class="bal-before" style="width:96.4968152866242%;">
+                      <div class="bal-before-inset" style="width: 539px;">
+                        <img src="./static/images/comparsion/3_comp_before_23.jpg">
+                        <div class="bal-beforePosition beforeLabel">
+                          Origin
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bal-handle" style="left:96.4968152866242%;">
+                      <span class=" handle-left-arrow"></span>
+                      <span class="handle-right-arrow"></span>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+                <div id="example2" class="bal-container-small" style="padding-bottom: 150%;">
+                  <div class="bal-after">
+                    <img src="./static/images/comparsion/2_comp_after_23.jpg">
+                    <div class="bal-afterPosition afterLabel" style="z-index:1;">
+                      Ours
+                    </div>
+                  </div>
 
-          <div style="margin-top: 40px">
-						<div style="display: inline-block; width:33%; ">
-							<div class="img_tag"><h3 style="text-align:right">w/o Compensation</h3></div>
-						</div>
-						<div style="display: inline-block; width:30%; ">
-							<div class="img_tag"><h3 style="text-align:left"> </h3></div>
-						</div>
-						<div style="display: inline-block; width:36%;">
-							<div class="img_tag"><h3 style="text-align:left">w/ Compensation (Ours)</h3></div>
-						</div>
-					</div>
-					<img src="./static/images/compensation_depth.jpg" style="width:100%"> -->
-
-          <p align="justify"> 최종 새 영상 추가
-					</p>
-
+                  <div class="bal-before" style="width:62.10191082802548%;">
+                    <div class="bal-before-inset" style="width: 539px;">
+                      <img src="./static/images/comparsion/2_comp_before_23.jpg">
+                      <div class="bal-beforePosition beforeLabel">
+                        Origin
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bal-handle" style="left:62.10191082802548%;">
+                    <span class=" handle-left-arrow"></span>
+                    <span class="handle-right-arrow"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
   </section>
+
+  <section class="section" style="padding: 20px;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-2">Results</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body" id="main-slider">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <video poster="" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
+              <source src="./static/videos/cat_compare_3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video poster="" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
+              <source src="./static/videos/bird2_compare_3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video poster="" autoplay controls muted loop playsinline style="width: 100%; height: auto;">
+              <source src="./static/videos/bird3_compare_3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item" style="width: 100%; display: flex; justify-content: center;">
+            <video poster="" autoplay controls muted loop playsinline style="width: 66.6%; height: auto; margin: 0 auto;">
+              <source src="./static/videos/pancake_compare_final.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <script>
     new BeforeAfter({
       id: '#example1'
     });
-    // new BeforeAfter({
-    //   id: '#example2'
-    // });
     new BeforeAfter({
-      id: '#example4'
+      id: '#example2'
     });
     // new BeforeAfter({
+    //   id: '#example3'
+    // });
+    // new BeforeAfter({
+    //   id: '#example4'
+    // });
+    // new BeforeAfter({
     //   id: '#example5'
+    // });
+    // new BeforeAfter({
+    //   id: '#example6'
     // });
 
   </script>
